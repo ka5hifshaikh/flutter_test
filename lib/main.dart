@@ -16,37 +16,15 @@ class MyApp extends StatelessWidget {
         title: Text("Material App"),
       ),
       body: Center(
-        child: Container(
-          padding: const EdgeInsets.all(8),
-          alignment: Alignment.center,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-            color: Colors.teal,
-            gradient: LinearGradient(
-              colors: [
-                Colors.yellow,
-                Colors.red,
-              ],
+        child: Row(
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(8),
+              width: 100,
+              height: 100,
+              color: Colors.yellow,
             ),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.grey,
-                blurRadius: 5,
-                offset: Offset(5, 5),
-              )
-            ],
-          ),
-          width: 100,
-          height: 100,
-          child: Text(
-            "i am a box",
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              fontSize: 20,
-            ),
-          ),
+          ],
         ),
       ),
     );
